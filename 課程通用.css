@@ -1,0 +1,91 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 30px;
+    flex: 1;
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topleft{ /*左上角標題*/
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+#searchBox{ /*搜索框*/
+    padding: 8px;
+    font-size: 14px;
+    width: 200px;
+}
+
+h1{ /*大標*/
+    font-size: 42px;
+    text-align: center;
+    margin-top: 0;
+}
+
+footer{ /*頁腳*/
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer a{ /*頁腳*/
+    color: #66ccff;
+    text-decoration: none;
+}
+
+main p{ /*大標下面那排的排版*/
+    text-align: center;
+    padding: 0;
+}
+
+.courseinfo{ /*大標下面那排*/
+    font-size: 20px;
+    margin-right: 50px;
+    margin-left: 30px;
+    display: inline-block;
+    
+}
+
+.coursebox{ /*內容*/
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 36px;
+}
+
+p a{ 
+    text-decoration: none;
+    color: darkblue;
+}
+
+p a:hover{ 
+    text-decoration: underline;
+}
+
+

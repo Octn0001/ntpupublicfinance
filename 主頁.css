@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topleft{ /*左上角標題*/
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+#searchBox{ /*搜索框*/
+    padding: 8px;
+    font-size: 14px;
+    width: 200px;
+}
+
+main{
+    padding: 30px;
+    flex: 1;
+}
+
+details {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
+  }
+
+summary {
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+details details {
+    margin-left: 20px;
+    background-color: #f9f9f9;
+    padding: 8px;
+    border-left: 2px solid #ccc;
+    margin-top: 20px;
+  }
+
+li{ 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li a{
+    text-decoration: none;
+    color: darkblue;
+}
+li a:hover{ 
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+footer a {
+    color: #66cbfd;
+    text-decoration: none;
+  }
+
+@media (max-width: 600px){
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }}
