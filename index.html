@@ -201,6 +201,14 @@
         <details>
             <summary>更新日誌</summary>
             <details>
+                <summary>v1.1.1 - 2025/05/14</summary>
+                <ul>
+                    <li>功能變動：
+                        <strong>移除課程資訊頁面內搜索功能</strong>
+                    </li>
+                </ul>
+            </details>
+            <details>
                 <summary>v1.1.0 - 2025/05/09</summary>
                 <ul>
                     <li>新增區塊：
@@ -265,46 +273,9 @@
 
     </main>
 
-    <footer>
-        <p>聯絡信箱：eizern14@gmail.com</p>
-        <p>© 2025 國立臺北大學進修部財政學系選課大全 | 製作人：James Liu</p>
-    </footer>
+    <script src="main.js"></script>
 
-    <script>
-        const searchBox = document.getElementById("searchBox");
-        const courseContainer = document.getElementById("courseContainer");
-    
-        searchBox.addEventListener("input", () => {
-          const keyword = searchBox.value.toLowerCase();
-          const listItems = courseContainer.querySelectorAll("li");
-          const allDetails = courseContainer.querySelectorAll("details");
-    
-          if (keyword === "") {
-            // 清空搜尋時：顯示全部課程，收合所有區塊
-            listItems.forEach(li => li.style.display = "list-item");
-            allDetails.forEach(d => d.open = false);
-            return;
-          }
-    
-          // 收合全部
-          allDetails.forEach(d => d.open = false);
-    
-          listItems.forEach(li => {
-            const text = li.textContent.toLowerCase();
-            const isMatch = text.includes(keyword);
-            li.style.display = isMatch ? "list-item" : "none";
-    
-            if (isMatch) {
-              let parent = li.parentElement;
-              while (parent && parent.tagName.toLowerCase() !== "main") {
-                if (parent.tagName.toLowerCase() === "details") {
-                  parent.open = true;
-                }
-                parent = parent.parentElement;
-              }
-            }
-          });
-        });
-      </script>
+       <!--原有footer改js批量添入-->
+    <div id="footer-placeholder"></div>
 </body>
 </html>
